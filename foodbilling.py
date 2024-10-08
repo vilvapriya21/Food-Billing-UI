@@ -7,9 +7,9 @@ import tkinter.messagebox
 root =Tk()
 root.geometry("1350x750+0+0")
 root.title("Food Billing System")
-root.configure(background='orange')
+root.configure(background='light blue')
 
-Tops = Frame(root,bg='orange',bd=20,pady=5,relief=RIDGE)
+Tops = Frame(root,bg='light blue',bd=20,pady=5,relief=RIDGE)
 Tops.pack(side=TOP)
 
 lblTitle=Label(Tops,font=('arial',60,'bold'),text='Food Billing System',bd=21,bg='black',
@@ -17,29 +17,29 @@ lblTitle=Label(Tops,font=('arial',60,'bold'),text='Food Billing System',bd=21,bg
 lblTitle.grid(row=0)
 
 
-ReceiptCal_F = Frame(root,bg='orange',bd=10,relief=RIDGE)
+ReceiptCal_F = Frame(root,bg='light blue',bd=10,relief=RIDGE)
 ReceiptCal_F.pack(side=RIGHT)
 
-Buttons_F=Frame(ReceiptCal_F,bg='orange',bd=3,relief=RIDGE)
+Buttons_F=Frame(ReceiptCal_F,bg='light blue',bd=3,relief=RIDGE)
 Buttons_F.pack(side=BOTTOM)
 
-Cal_F=Frame(ReceiptCal_F,bg='orange',bd=6,relief=RIDGE)
+Cal_F=Frame(ReceiptCal_F,bg='light blue',bd=6,relief=RIDGE)
 Cal_F.pack(side=TOP)
 
-Receipt_F=Frame(ReceiptCal_F,bg='orange',bd=4,relief=RIDGE)
+Receipt_F=Frame(ReceiptCal_F,bg='light blue',bd=4,relief=RIDGE)
 Receipt_F.pack(side=BOTTOM)
 
-MenuFrame = Frame(root,bg='orange',bd=10,relief=RIDGE)
+MenuFrame = Frame(root,bg='light blue',bd=10,relief=RIDGE)
 MenuFrame.pack(side=LEFT)
-Cost_F=Frame(MenuFrame,bg='orange',bd=4)
+Cost_F=Frame(MenuFrame,bg='light blue',bd=4)
 Cost_F.pack(side=BOTTOM)
-Drinks_F=Frame(MenuFrame,bg='orange',bd=4)
+Drinks_F=Frame(MenuFrame,bg='light blue',bd=4)
 Drinks_F.pack(side=TOP)
 
 
-Drinks_F=Frame(MenuFrame,bg='orange',bd=4,relief=RIDGE)
+Drinks_F=Frame(MenuFrame,bg='light blue',bd=4,relief=RIDGE)
 Drinks_F.pack(side=LEFT)
-Food_F=Frame(MenuFrame,bg='orange',bd=4,relief=RIDGE)
+Food_F=Frame(MenuFrame,bg='light blue',bd=4,relief=RIDGE)
 Food_F.pack(side=RIGHT)
 ###################################################variables################################################
 
@@ -403,21 +403,21 @@ def Receipt():
 
 #########################################Drinks####################################################################
 Sprite=Checkbutton(Drinks_F,text='Sprite',variable=var1,onvalue=1,offvalue=0,font=('arial',18,'bold'),
-                    bg='orange',command=chkSprite).grid(row=0,sticky=W)
+                    bg='light blue',command=chkSprite).grid(row=0,sticky=W)
 Pepsi=Checkbutton(Drinks_F,text='Pepsi',variable=var2,onvalue=1,offvalue=0,font=('arial',18,'bold'),
-                    bg='orange',command=chkPepsi).grid(row=1,sticky=W)
+                    bg='light blue',command=chkPepsi).grid(row=1,sticky=W)
 DietCoke=Checkbutton(Drinks_F,text='DietCoke',variable=var3,onvalue=1,offvalue=0,font=('arial',18,'bold'),
-                    bg='orange',command=chk_DietCoke).grid(row=2,sticky=W)
+                    bg='light blue',command=chk_DietCoke).grid(row=2,sticky=W)
 Mojito=Checkbutton(Drinks_F,text='Mojito',variable=var4,onvalue=1,offvalue=0,font=('arial',18,'bold'),
-                    bg='orange',command=chk_Mojito).grid(row=3,sticky=W)
+                    bg='light blue',command=chk_Mojito).grid(row=3,sticky=W)
 Cappuccino=Checkbutton(Drinks_F,text='Cappuccino',variable=var5,onvalue=1,offvalue=0,font=('arial',18,'bold'),
-                    bg='orange',command=chk_Cappuccino).grid(row=4,sticky=W)
+                    bg='light blue',command=chk_Cappuccino).grid(row=4,sticky=W)
 Fanta=Checkbutton(Drinks_F,text='Fanta',variable=var6,onvalue=1,offvalue=0,font=('arial',18,'bold'),
-                    bg='orange',command=chk_Fanta).grid(row=5,sticky=W)
+                    bg='light blue',command=chk_Fanta).grid(row=5,sticky=W)
 CocaCola=Checkbutton(Drinks_F,text='CocaCola',variable=var7,onvalue=1,offvalue=0,font=('arial',18,'bold'),
-                    bg='orange',command=chk_CocaCola).grid(row=6,sticky=W)
+                    bg='light blue',command=chk_CocaCola).grid(row=6,sticky=W)
 ColdCoffee=Checkbutton(Drinks_F,text='ColdCoffee',variable=var8,onvalue=1,offvalue=0,font=('arial',18,'bold'),
-                    bg='orange',command=chk_ColdCoffee).grid(row=7,sticky=W)
+                    bg='light blue',command=chk_ColdCoffee).grid(row=7,sticky=W)
 ##############################################Drink Entry###############################################################
 
 txtSprite = Entry(Drinks_F,font=('arial',16,'bold'),bd=8,width=6,justify=LEFT,state=DISABLED
@@ -454,21 +454,21 @@ txtColdCoffee.grid(row=7,column=1)
 #############################################Foods######################################################################
 
 HotDog = Checkbutton(Food_F,text="HotDog\t\t\t ",variable=var9,onvalue = 1, offvalue=0,
-                        font=('arial',16,'bold'),bg='orange',command=chk_HotDog).grid(row=0,sticky=W)
+                        font=('arial',16,'bold'),bg='light blue',command=chk_HotDog).grid(row=0,sticky=W)
 VegBurger = Checkbutton(Food_F,text="VegBurger",variable=var10,onvalue = 1, offvalue=0,
-                        font=('arial',16,'bold'),bg='orange',command=chk_VegBurger).grid(row=1,sticky=W)
+                        font=('arial',16,'bold'),bg='light blue',command=chk_VegBurger).grid(row=1,sticky=W)
 Pasta = Checkbutton(Food_F,text="Pasta ",variable=var11,onvalue = 1, offvalue=0,
-                        font=('arial',16,'bold'),bg='orange',command=chk_Pasta).grid(row=2,sticky=W)
+                        font=('arial',16,'bold'),bg='light blue',command=chk_Pasta).grid(row=2,sticky=W)
 HamBurger = Checkbutton(Food_F,text="Rice Plate ",variable=var12,onvalue = 1, offvalue=0,
-                        font=('arial',16,'bold'),bg='orange',command=chk_HamBurger).grid(row=3,sticky=W)
+                        font=('arial',16,'bold'),bg='light blue',command=chk_HamBurger).grid(row=3,sticky=W)
 Sandwich = Checkbutton(Food_F,text="Sandwich ",variable=var13,onvalue = 1, offvalue=0,
-                        font=('arial',16,'bold'),bg='orange',command=chk_Sandwich).grid(row=4,sticky=W)
+                        font=('arial',16,'bold'),bg='light blue',command=chk_Sandwich).grid(row=4,sticky=W)
 Fires = Checkbutton(Food_F,text="Fires ",variable=var14,onvalue = 1, offvalue=0,
-                        font=('arial',16,'bold'),bg='orange',command=chk_Fires).grid(row=5,sticky=W)
+                        font=('arial',16,'bold'),bg='light blue',command=chk_Fires).grid(row=5,sticky=W)
 Spagetti = Checkbutton(Food_F,text="Spagetti ",variable=var15,onvalue = 1, offvalue=0,
-                        font=('arial',16,'bold'),bg='orange',command=chk_Spagetti).grid(row=6,sticky=W)
+                        font=('arial',16,'bold'),bg='light blue',command=chk_Spagetti).grid(row=6,sticky=W)
 Fazitas = Checkbutton(Food_F,text="Fazitas ",variable=var16,onvalue = 1, offvalue=0,
-                        font=('arial',16,'bold'),bg='orange',command=chk_Fazitas).grid(row=7,sticky=W)
+                        font=('arial',16,'bold'),bg='light blue',command=chk_Fazitas).grid(row=7,sticky=W)
 ################################################Entry Box For Cake##########################################################
 txtHotDog=Entry(Food_F,font=('arial',16,'bold'),bd=8,width=6,justify=LEFT,state=DISABLED,
                         textvariable=E_HotDog)
@@ -502,21 +502,21 @@ txtFazitas=Entry(Food_F,font=('arial',16,'bold'),bd=8,width=6,justify=LEFT,state
                         textvariable=E_Fazitas)
 txtFazitas.grid(row=7,column=1)
 ###########################################ToTal Cost################################################################################
-lblCostofDrinks=Label(Cost_F,font=('arial',14,'bold'),text='Cost of Drinks\t',bg='orange',
+lblCostofDrinks=Label(Cost_F,font=('arial',14,'bold'),text='Cost of Drinks\t',bg='light blue',
                 fg='black',justify=CENTER)
 lblCostofDrinks.grid(row=0,column=0,sticky=W)
 txtCostofDrinks=Entry(Cost_F,bg='white',bd=7,font=('arial',14,'bold'),
                         insertwidth=2,justify=RIGHT,textvariable=CostofDrinks)
 txtCostofDrinks.grid(row=0,column=1)
 
-lblCostofFood=Label(Cost_F,font=('arial',14,'bold'),text='Cost of Foods  ',bg='orange',
+lblCostofFood=Label(Cost_F,font=('arial',14,'bold'),text='Cost of Foods  ',bg='light blue',
                 fg='black',justify=CENTER)
 lblCostofFood.grid(row=1,column=0,sticky=W)
 txtCostofFood=Entry(Cost_F,bg='white',bd=7,font=('arial',14,'bold'),
                         insertwidth=2,justify=RIGHT,textvariable=CostofFood)
 txtCostofFood.grid(row=1,column=1)
 
-lblServiceCharge=Label(Cost_F,font=('arial',14,'bold'),text='Service Charge',bg='orange',
+lblServiceCharge=Label(Cost_F,font=('arial',14,'bold'),text='Service Charge',bg='light blue',
                 fg='black',justify=CENTER)
 lblServiceCharge.grid(row=2,column=0,sticky=W)
 txtServiceCharge=Entry(Cost_F,bg='white',bd=7,font=('arial',14,'bold'),
@@ -524,21 +524,21 @@ txtServiceCharge=Entry(Cost_F,bg='white',bd=7,font=('arial',14,'bold'),
 txtServiceCharge.grid(row=2,column=1)
 ###########################################################Payment information###################################################
 
-lblPaidTax=Label(Cost_F,font=('arial',14,'bold'),text='\tPaid Tax',bg='orange',bd=7,
+lblPaidTax=Label(Cost_F,font=('arial',14,'bold'),text='\tPaid Tax',bg='light blue',bd=7,
                 fg='black',justify=CENTER)
 lblPaidTax.grid(row=0,column=2,sticky=W)
 txtPaidTax=Entry(Cost_F,bg='white',bd=7,font=('arial',14,'bold'),
                         insertwidth=2,justify=RIGHT,textvariable=PaidTax)
 txtPaidTax.grid(row=0,column=3)
 
-lblSubTotal=Label(Cost_F,font=('arial',14,'bold'),text='\tSub Total',bg='orange',bd=7,
+lblSubTotal=Label(Cost_F,font=('arial',14,'bold'),text='\tSub Total',bg='light blue',bd=7,
                 fg='black',justify=CENTER)
 lblSubTotal.grid(row=1,column=2,sticky=W)
 txtSubTotal=Entry(Cost_F,bg='white',bd=7,font=('arial',14,'bold'),
                         insertwidth=2,justify=RIGHT,textvariable=SubTotal)
 txtSubTotal.grid(row=1,column=3)
 
-lblTotalCost=Label(Cost_F,font=('arial',14,'bold'),text='\tTotal',bg='orange',bd=7,
+lblTotalCost=Label(Cost_F,font=('arial',14,'bold'),text='\tTotal',bg='light blue',bd=7,
                 fg='black',justify=CENTER)
 lblTotalCost.grid(row=2,column=2,sticky=W)
 txtTotalCost=Entry(Cost_F,bg='white',bd=7,font=('arial',14,'bold'),
@@ -552,13 +552,13 @@ txtReceipt.grid(row=0,column=0)
 
 ###########################################BUTTONS################################################################################
 btnTotal=Button(Buttons_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='Total',
-                        bg='orange',command=CostofItem).grid(row=0,column=0)
+                        bg='light blue',command=CostofItem).grid(row=0,column=0)
 btnReceipt=Button(Buttons_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='Receipt',
-                        bg='orange',command=Receipt).grid(row=0,column=1)
+                        bg='light blue',command=Receipt).grid(row=0,column=1)
 btnReset=Button(Buttons_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='Reset',
-                        bg='orange',command=Reset).grid(row=0,column=2)
+                        bg='light blue',command=Reset).grid(row=0,column=2)
 btnExit=Button(Buttons_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='Exit',
-                        bg='orange',command=iExit).grid(row=0,column=3)
+                        bg='light blue',command=iExit).grid(row=0,column=3)
 
 ###################################Calculator Display################################################################################
 
@@ -591,40 +591,40 @@ txtDisplay.insert(0,"0")
 
 ###########################################CALCULATOR BUTTONS################################################################################
 btn7=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='7',
-                        bg='orange',command=lambda:btnClick(7)).grid(row=2,column=0)
+                        bg='light blue',command=lambda:btnClick(7)).grid(row=2,column=0)
 btn8=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='8',
-                        bg='orange',command=lambda:btnClick(8)).grid(row=2,column=1)
+                        bg='light blue',command=lambda:btnClick(8)).grid(row=2,column=1)
 btn9=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='9',
-                        bg='orange',command=lambda:btnClick(9)).grid(row=2,column=2)
+                        bg='light blue',command=lambda:btnClick(9)).grid(row=2,column=2)
 btnAdd=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='+',
-                        bg='orange',command=lambda:btnClick('+')).grid(row=2,column=3)
+                        bg='light blue',command=lambda:btnClick('+')).grid(row=2,column=3)
 ###########################################CALCULATOR BUTTONS################################################################################
 btn4=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='4',
-                        bg='orange',command=lambda:btnClick(4)).grid(row=3,column=0)
+                        bg='light blue',command=lambda:btnClick(4)).grid(row=3,column=0)
 btn5=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='5',
-                        bg='orange',command=lambda:btnClick(5)).grid(row=3,column=1)
+                        bg='light blue',command=lambda:btnClick(5)).grid(row=3,column=1)
 btn6=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='6',
-                        bg='orange',command=lambda:btnClick(6)).grid(row=3,column=2)
+                        bg='light blue',command=lambda:btnClick(6)).grid(row=3,column=2)
 btnSub=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='-',
-                        bg='orange',command=lambda:btnClick('-')).grid(row=3,column=3)
+                        bg='light blue',command=lambda:btnClick('-')).grid(row=3,column=3)
 ###########################################CALCULATOR BUTTONS################################################################################
 btn1=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='1',
-                        bg='orange',command=lambda:btnClick(1)).grid(row=4,column=0)
+                        bg='light blue',command=lambda:btnClick(1)).grid(row=4,column=0)
 btn2=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='2',
-                        bg='orange',command=lambda:btnClick(2)).grid(row=4,column=1)
+                        bg='light blue',command=lambda:btnClick(2)).grid(row=4,column=1)
 btn3=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='3',
-                        bg='orange',command=lambda:btnClick(3)).grid(row=4,column=2)
+                        bg='light blue',command=lambda:btnClick(3)).grid(row=4,column=2)
 btnMulti=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='*',
-                        bg='orange',command=lambda:btnClick('*')).grid(row=4,column=3)
+                        bg='light blue',command=lambda:btnClick('*')).grid(row=4,column=3)
 ###########################################CALCULATOR BUTTONS################################################################################
 btn0=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='0',
-                        bg='orange',command=lambda:btnClick(0)).grid(row=5,column=0)
+                        bg='light blue',command=lambda:btnClick(0)).grid(row=5,column=0)
 btnClear=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='C',
-                        bg='orange',command=btnClear).grid(row=5,column=1)
+                        bg='light blue',command=btnClear).grid(row=5,column=1)
 btnEqual=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='=',
-                        bg='orange',command=btnEquals).grid(row=5,column=2)
+                        bg='light blue',command=btnEquals).grid(row=5,column=2)
 btnDiv=Button(Cal_F,padx=16,pady=1,bd=7,fg='black',font=('arial',16,'bold'),width=4,text='/',
-                        bg='orange',command=lambda:btnClick('/')).grid(row=5,column=3)
+                        bg='light blue',command=lambda:btnClick('/')).grid(row=5,column=3)
 
 
 
